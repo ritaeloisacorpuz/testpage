@@ -12,53 +12,47 @@
       --font-default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     * { box-sizing: border-box; }
-    body { font-family: var(--font-default); margin: 0; padding: 0; color: var(--color-dark); background: #fff; }
+    body { font-family: var(--font-default); margin: 0; padding: 0; color: var(--color-dark); background: #ffffff; }
     p, span, li { text-align: justify; }
-    h1, h2, h3, h4 { text-align: center; color: var(--color-dark); }
+    h1, h2, h3, h4 { text-align: center; color: var(--color-dark); margin-top: 0; }
     
-    /* Standard Header */
+    /* Header */
     header { background-color: #111111; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
-    header .logo img { height: 35px; width: auto; }
+    header .logo { display: flex; align-items: center; }
     nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
     nav ul li a { color: #ffffff; text-decoration: none; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
     header .user-actions a { color: #20b2aa; text-decoration: none; font-size: 14px; font-weight: bold; }
 
-    /* Hero Section */
+    /* Hero */
     .hero { display: flex; width: 100%; min-height: 500px; }
-    .hero-left { width: 50%; padding: 60px 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #fff; }
+    .hero-left { width: 50%; padding: 60px 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #ffffff; }
     .hero-left h1 { font-size: 42px; line-height: 1.2; margin-bottom: 15px; color: var(--color-accent); font-weight: 300; text-align: center; }
     .hero-left h3 { font-size: 18px; color: var(--color-accent); font-weight: 400; margin-bottom: 30px; text-align: center; }
-    .hero-img-box { width: 380px; height: 180px; margin-bottom: 25px; display: flex; justify-content: center; }
-    .hero-img-box img { max-width: 100%; max-height: 100%; object-fit: cover; }
-    .btn-explore { border: 1.5px solid var(--color-accent); color: var(--color-accent); background: transparent; padding: 10px 28px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: 500; }
-    .hero-right { width: 50%; height: 500px; overflow: hidden; display: flex; justify-content: center; align-items: center; }
-    .hero-right img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-img-box { width: 380px; height: 180px; margin-bottom: 25px; display: flex; justify-content: center; align-items: center; background: #f0f0f0; border: 1px dashed #ccc; }
+    .btn-explore { border: 1.5px solid var(--color-accent); color: var(--color-accent); background: transparent; padding: 10px 28px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: 500; display: inline-block; }
+    .hero-right { width: 50%; height: 500px; background: #e0e0e0; display: flex; justify-content: center; align-items: center; }
 
-    /* Mission Section */
-    .mission-section { display: flex; width: 100%; min-height: 450px; background: #fff; border-top: 1px solid #eee; }
+    /* Mission */
+    .mission-section { display: flex; width: 100%; min-height: 450px; background: #ffffff; border-top: 1px solid #eeeeee; }
     .mission-left { width: 50%; padding: 60px 50px; display: flex; flex-direction: column; justify-content: center; }
     .mission-left h2 { font-size: 36px; text-align: left; color: var(--color-accent); margin-bottom: 25px; }
     .mission-left p { font-size: 14px; line-height: 1.6; margin-bottom: 15px; text-align: justify; }
-    .mission-logo { width: 180px; height: 80px; margin-top: 30px; display: flex; justify-content: center; }
-    .mission-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
-    .mission-right { width: 50%; height: 450px; overflow: hidden; display: flex; justify-content: center; align-items: center; }
-    .mission-right img { width: 100%; height: 100%; object-fit: cover; }
+    .mission-logo { width: 180px; height: 80px; margin-top: 20px; display: flex; justify-content: center; align-items: center; background: #fafafa; border: 1px dashed #ccc; }
+    .mission-right { width: 50%; height: 450px; background: #dcdcdc; display: flex; justify-content: center; align-items: center; }
 
-    /* Why Choose Us Section */
-    .why-section { padding: 60px 80px; background: #fff; }
+    /* Why Choose Us */
+    .why-section { padding: 60px 80px; background: #ffffff; }
     .why-section h2 { font-size: 38px; text-align: left; color: var(--color-accent); margin-bottom: 20px; }
     .why-section .subtitle { font-size: 14px; color: var(--color-accent); margin-bottom: 15px; text-align: justify; }
     .why-section .intro-desc { font-size: 14px; line-height: 1.6; margin-bottom: 40px; text-align: justify; }
-    
     .feature-item { display: flex; gap: 30px; margin-bottom: 40px; align-items: flex-start; }
-    .feature-icon { width: 50px; height: 50px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; }
-    .feature-icon img { max-width: 100%; max-height: 100%; }
+    .feature-icon { width: 50px; height: 50px; flex-shrink: 0; background: var(--color-light); display: flex; justify-content: center; align-items: center; border-radius: 50%; color: var(--color-accent); font-weight: bold; }
     .feature-content h3 { font-size: 24px; text-align: left; color: var(--color-accent); margin-bottom: 10px; font-weight: 400; }
     .feature-content p { font-size: 14px; line-height: 1.6; margin: 0; text-align: justify; }
 
-    /* Standard Footer */
+    /* Footer */
     footer { background: #ffffff; padding: 40px 20px; border-top: 1px solid #e0e0e0; }
-    .footer-box { width: 700px; max-width: 90%; margin: 0 auto; background: #ffffff; padding: 25px 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; }
+    .footer-box { width: 700px; max-width: 90%; margin: 0 auto; background: #ffffff; padding: 25px 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; justify-content: space-between; align-items: center; border: 1px solid #eee; }
     .footer-col { font-size: 13px; text-align: center; }
     .footer-col span { display: block; font-weight: bold; margin-bottom: 8px; text-align: center; }
     .footer-col p { margin: 0; text-align: center; }
@@ -66,12 +60,14 @@
 </head>
 <body>
 
-  <!-- Standard Header -->
+  <!-- Header -->
   <header>
-    <div class="logo img-container"><img src="logo.png" alt="Logo"></div>
+    <div class="logo">
+      <svg width="120" height="30" viewBox="0 0 120 30" fill="none"><rect width="120" height="30" rx="4" fill="#333"/><text x="15" y="20" fill="#fff" font-size="12" font-family="sans-serif">MYBIBLIOTEQUE</text></svg>
+    </div>
     <nav>
       <ul>
-        <li><a href="home.html">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a href="aboutus.html">About Us</a></li>
         <li><a href="products.html">Products &amp; Services</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
@@ -82,43 +78,43 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-left fixed-container">
+    <div class="hero-left">
       <h1>Academic Excellence at your Doorstep</h1>
       <h3>We want your kids to Stay Ahead</h3>
-      <div class="hero-img-box img-container">
-        <img src="hero-small.jpg" alt="Studying">
+      <div class="hero-img-box">
+        <span style="color: #888; font-size: 13px;">[ Image Placeholder: Studying ]</span>
       </div>
       <a href="products.html" class="btn-explore">Explore Our Services</a>
     </div>
-    <div class="hero-right img-container fixed-container">
-      <img src="hero-main.jpg" alt="Academic Idea">
+    <div class="hero-right">
+      <span style="color: #666; font-size: 16px;">[ Hero Image Placeholder: Academic Idea ]</span>
     </div>
   </section>
 
   <!-- Mission Section -->
   <section class="mission-section">
-    <div class="mission-left fixed-container">
+    <div class="mission-left">
       <h2>Our Mission</h2>
       <p>In today's competitive job market and stiff business competition, you have to give your kids the tools they need to succeed in life.</p>
       <p>Do not let them cower in the dunce's corner.</p>
       <p>Help them Stay Ahead. We owe them that.</p>
-      <div class="mission-logo img-container">
-        <img src="brand-logo.png" alt="Power Tutorial">
+      <div class="mission-logo">
+        <span style="color: #888; font-size: 12px;">POWER TUTORIAL LOGO</span>
       </div>
     </div>
-    <div class="mission-right img-container fixed-container">
-      <img src="mission-books.jpg" alt="Books">
+    <div class="mission-right">
+      <span style="color: #666; font-size: 16px;">[ Image Placeholder: Books ]</span>
     </div>
   </section>
 
   <!-- Why Choose Us Section -->
-  <section class="why-section fixed-container">
+  <section class="why-section">
     <h2>Why Choose Us</h2>
     <p class="subtitle">We are all unique. We all learn differently. We all have different strengths.</p>
     <p class="intro-desc">Power Tutorial recognizes this and customizes its teaching methods to accommodate your child's specific needs to better achieve their learning objectives in the shortest possible time.</p>
 
     <div class="feature-item">
-      <div class="feature-icon img-container"><img src="icon1.png" alt="Icon"></div>
+      <div class="feature-icon">01</div>
       <div class="feature-content">
         <h3>Differentiated Learning Methods</h3>
         <p>Lessons are tailored to meet the diverse needs, interests and learning style of each student, which allows each student to progress at their own pace.</p>
@@ -126,7 +122,7 @@
     </div>
 
     <div class="feature-item">
-      <div class="feature-icon img-container"><img src="icon2.png" alt="Icon"></div>
+      <div class="feature-icon">02</div>
       <div class="feature-content">
         <h3>Technology-Enhanced Instruction</h3>
         <p>Digital tools such as interactive simulations, videos and online collaboration enrich learning and make abstract concepts more accessible.</p>
@@ -134,7 +130,7 @@
     </div>
 
     <div class="feature-item">
-      <div class="feature-icon img-container"><img src="icon3.png" alt="Icon"></div>
+      <div class="feature-icon">03</div>
       <div class="feature-content">
         <h3>Constructivist Approach</h3>
         <p>Students actively build their own understanding through hands-on activities and problem solving.</p>
@@ -142,7 +138,7 @@
     </div>
   </section>
 
-  <!-- Standard Footer -->
+  <!-- Footer -->
   <footer>
     <div class="footer-box">
       <div class="footer-col">
