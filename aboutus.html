@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Power Tutorial</title>
+  <style>
+    :root {
+      --color-dark: #003B46;
+      --color-light: #E8F1F2;
+      --color-accent: #07575B;
+      --font-default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: var(--font-default); margin: 0; padding: 0; color: var(--color-dark); background: #fff; }
+    p, span, li { text-align: justify; }
+    h1, h2, h3 { text-align: center; color: var(--color-accent); }
+
+    /* Header */
+    header { background-color: #111111; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
+    header .logo img { height: 35px; width: auto; }
+    nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+    nav ul li a { color: #ffffff; text-decoration: none; font-size: 13px; text-transform: uppercase; }
+    header .user-actions a { color: #20b2aa; text-decoration: none; font-size: 14px; font-weight: bold; }
+
+    /* Page Header */
+    .page-header { text-align: center; padding: 30px 20px 15px 20px; border-bottom: 1px solid #777; }
+    .page-header .brand-logo { width: 60px; margin: 0 auto 10px auto; display: flex; justify-content: center; }
+    .page-header .brand-logo img { width: 100%; height: auto; }
+    .page-header h1 { font-size: 42px; font-style: italic; font-weight: bold; margin: 0; }
+
+    /* Main Content */
+    .about-container { display: flex; padding: 50px 60px; gap: 50px; max-width: 1300px; margin: 0 auto; }
+    .about-img-col { width: 45%; height: 500px; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+    .about-img-col img { width: 100%; height: 100%; object-fit: cover; }
+    
+    .about-text-col { width: 55%; display: flex; flex-direction: column; justify-content: center; }
+    .about-text-col h2 { font-size: 32px; font-style: italic; text-align: left; margin-bottom: 20px; color: var(--color-accent); }
+    .about-text-col p { font-size: 14px; line-height: 1.6; margin-bottom: 20px; color: var(--color-accent); text-align: justify; }
+
+    /* Footer */
+    footer { background: #ffffff; padding: 40px 20px; border-top: 1px solid #e0e0e0; }
+    .footer-box { width: 700px; max-width: 90%; margin: 0 auto; background: #ffffff; padding: 25px 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; }
+    .footer-col { font-size: 13px; text-align: center; }
+    .footer-col span { display: block; font-weight: bold; margin-bottom: 8px; text-align: center; }
+    .footer-col p { margin: 0; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo img-container"><img src="logo.png" alt="Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="products.html">Products &amp; Services</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions"><a href="#">Log In</a></div>
+  </header>
+
+  <div class="page-header">
+    <div class="brand-logo img-container"><img src="brand-icon.png" alt="Icon"></div>
+    <h1>About Us</h1>
+  </div>
+
+  <main class="about-container fixed-container">
+    <div class="about-img-col img-container">
+      <img src="about-child.jpg" alt="Child studying">
+    </div>
+
+    <div class="about-text-col">
+      <h2>This is who we are</h2>
+      <p>We are parents, educators and business women alarmed at the declining English literacy and dropping proficiency in Math and Science. So, we banded together to help busy parents provide their kids with the skills they need to become who they dream to be in life --- an Engineer, a Doctor, a Lawyer or maybe the first Filipino nobel prize winner? Or maybe the next best-selling author? The possibilities are unlimited.</p>
+      <p>With this mission in mind, we formed a group of dedicated educators who derive deep satisfaction in helping your children achieve academic excellence --- our Power Tutors.</p>
+      <p>Our Power Tutors will design and tailor your academic program to meet your child's specific needs. We will assess your child's learning style and chart his learning milestones appropriate to his skills and capabilities.</p>
+      
+      <h2>Our Commitment</h2>
+      <p>We are dedicated to providing top-notch tutorial services to students from elementary through high school levels, ensuring long-term educational growth.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-box">
+      <div class="footer-col">
+        <span>Call</span>
+        <p>0956-400-1626</p>
+      </div>
+      <div class="footer-col">
+        <span>Email</span>
+        <p>powertutorial@hawthorneconsultancymanila.com</p>
+      </div>
+      <div class="footer-col">
+        <span>Follow</span>
+        <p>Facebook</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
